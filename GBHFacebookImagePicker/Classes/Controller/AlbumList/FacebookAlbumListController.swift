@@ -5,6 +5,8 @@
 //  Created by Florian Gabach on 17/11/2018.
 //
 
+import UIKit
+
 final class FacebookAlbumListController: UITableViewController {
     
     // MARK: - Var
