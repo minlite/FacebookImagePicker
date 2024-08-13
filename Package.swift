@@ -14,7 +14,7 @@ let package = Package(
     
     dependencies: [
         .package(url: "https://github.com/facebook/facebook-ios-sdk",
-                 from: "17.0.3")
+                 from: "16.0.0")
     ],
     targets: [
         .target(name: "GBHFacebookImagePicker",
