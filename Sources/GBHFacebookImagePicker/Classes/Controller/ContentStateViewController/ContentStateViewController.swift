@@ -29,9 +29,9 @@ final class ContentStateViewController: UIViewController {
     // MARK: - Action
 
     func transition(to newState: State) {
-        self.shownViewController?.removeFromParent()
+        self.shownViewController?.remove()
         let viewCtrl = viewController(for: newState)
-        self.addChild(viewCtrl)
+        self.add(viewCtrl)
         self.shownViewController = viewCtrl
         self.state = newState
     }

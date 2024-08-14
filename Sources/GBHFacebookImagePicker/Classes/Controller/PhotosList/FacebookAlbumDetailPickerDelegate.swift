@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol FacebookAlbumDetailPickerDelegate: class {
+protocol FacebookAlbumDetailPickerDelegate: AnyObject {
     func didSelectImages(images: [FacebookImage])
     func didPressFinishSelection(images: [FacebookImage])
 }

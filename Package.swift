@@ -1,9 +1,7 @@
-// swift-tools-version: 5.10
+// swift-tools-version: 5.4
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
-
-// Setting up this file: https://www.pointfree.co/episodes/ep171-modularization-part-1
 
 let package = Package(
     name: "GBHFacebookImagePicker",
@@ -22,7 +20,7 @@ let package = Package(
                     .product(name: "FacebookCore", package: "facebook-ios-sdk"),
                     .product(name: "FacebookLogin", package: "facebook-ios-sdk")
                 ],
-                path: "GBHFacebookImagePicker/Classes",
+                resources: [.process("Resources")],
                 publicHeadersPath: "."
         ),
     ]
